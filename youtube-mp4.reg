@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\YoutubeDL]
+@="Download Mp3"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\YoutubeDL\command]
+@="powershell.exe -Command youtube-dl -x --audio-format mp3 $(Get-Clipboard)"

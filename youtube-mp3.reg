@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\YoutubeDL]
+@="Download with Youtube-DL"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\YoutubeDL\command]
+@="powershell.exe -Command youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 $(Get-Clipboard)"
